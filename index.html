@@ -1,11 +1,146 @@
+<!-- 
+  Name: Celine Mehouachi
+  Course:WebDevelopment10S
+  Teacher:Mr.Hardman
+  School:PembinaTrailsCollegiate(PTC)
+  DateLastModified: 10th November 2025
+  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Anime Archives</title>
+  <link rel="icon" type="image/png" href="logo.png"/>
+  <style>
+    body   {background-color:rgb(26, 26, 26); color:whitesmoke;}
+  </style>
+  <style>
+  .primary {
+  float: right;
+  margin-bottom:50px;
+}
+.secondary {
+  float: right;
+  margin-right:10px;
+  margin-bottom:50px;
+}
+</style>
 </head>
 <body>
-  
+  <!-- 
+  The header tag is a semantic tag for content that is consistent
+  at the top of every page in your website.
+  -->
+<header>
+  <section>
+    <h1 style="margin-bottom:5px;color:rgb(255, 188, 63); text-align:center;">TheAnimeArchives</h1>
+    <h4 style="margin-top:5px; text-align:center;">the best website for fans</h4>
+
+  <nav>
+    <a href="signup.html"><button class="primary">Sign Up</button></a>
+    <a href="signin.html"><button class="secondary">Sign In</button></a>
+  </nav>
+  </section>
+</header>
+
+  <hr />
+
+  <img src="images/TTA-logo.png" alt="My Logo" width="300" height="250"/>
+
+  <!-- Nav section & searchbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </nav>
+  <br />
+
+  <section>
+    <!-- The form tag is used to make a displayable form for user input info  -->
+    <form>
+      <label for="search">Search Anime:</label>
+      <input type="text" id="search" name="search" placeholder="Search..." />
+      <label for="genre">Genre:</label>
+      <select id="genre" name="genre">
+        <option value="">Select Genre</option>
+        <option value="shonen">Shonen</option>
+        <option value="shoujou">Shojou</option>
+        <option value="isekai">Isekai</option>
+        <option value="horror">Thriller</option>
+        <option value="romance">Romance</option>
+        <option value="sci-fi">Sci-fi</option>
+        <option value="action">Action</option>
+      </select>
+    </form>
+  </section>
+
+    <hr />
+
+    <main>
+      <section>
+        <h2>Welcome to TheAnimeArchives.to!</h2>
+
+  <br />
+
+    <h3>Recommended for You!:</h3>
+    <table border="1">
+    <tr>
+      <th>Anime</th>
+      <th>Desc</th>
+    </tr>
+    <tr>
+      <td><img src="images/Fullmetalalchemist.jpg" alt="Full Metal Alchemist: Brotherhood" width="150"/></td>
+      <td><ul><li>Released: 2009</li><li>Genre: Action, Adventure, Shonen <br /></li>
+        <li>Author: Hiromu Arakawa</li><li>Studio: Bones</li></ul>
+      </td>
+    </tr>
+    <tr>
+      <td><img src="images/recommend2.jpg" alt="Anime 2" width="150" /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><img src="images/recommend2.jpg" alt="Anime 2" width="150" /></td>
+      <td>Anime 2 </td>
+    </tr>
+    <tr>
+      <td><img src="images/recommend2.jpg" alt="Anime 2" width="150" /></td>
+      <td>Anime 2 </td>
+    </tr>
+    </table>
+</section>    
+
+    <section>
+      <h3>Top Airing Anime</h3>
+      <ol>
+        <li>My Hero Academia: final season</li>
+        <li>Spy x Family: season 3</li>
+        <li>One piece</li>
+        <li>Sousou no Freiren</li>
+        <li>Boruto: Two blue vortex</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Winter 2025 Anime</h3>
+      <ul>
+      <li><img src="images/winter1.jpg" alt="Winter Anime 1" width="150" /></li>
+      <li><img src="images/winter2.jpg" alt="Winter Anime 2" width="150" /></li>
+      <li><img src="images/winter3.jpg" alt="Winter Anime 3" width="150" /></li>
+      </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&#169;2025 TheAnimeArchives</p>
+      <p>Created by: Celine Mehouachi</p>
+    </footer>
+
+  <!-- Hello :) -->
+
 </body>
 </html>
