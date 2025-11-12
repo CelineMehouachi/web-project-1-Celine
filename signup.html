@@ -31,19 +31,57 @@
   <section>
     <h2>Create Your Account!</h2>
     <p><i>Join TheAnimeArchives today to catalog your favorite anime & manga,
-      support your favorite works, explore new picks and more. It's Free!</i></p>
-    <form>
-      <label for="username">Username:</label><br/>
-      <input type="text" id="username" name="username" required /><br/><br/>
-      
-      <label for="email">Email:</label><br/>
-      <input type="email" id="email" name="email" required /><br/><br/>
-      
-      <label for="password">Password:</label><br/>
-      <input type="password" id="password" name="password" required /><br/><br/>
-      
-      <button type="submit">Sign Up</button>
+    support your favorite works, explore new picks and more. It's Free!</i></p>
+  <fieldset form="sign-up">
+  <legend>Sign Up</legend>
+  <form>
+    <label for="username">Username:</label><br/>
+    <input type="text" id="username" name="username" required /><br/><br/>
+    
+    <label for="email">Email:</label><br/>
+    <input type="email" id="email" name="email" required /><br/><br/>
+    
+    <label for="password">Password:</label><br/>
+    <input type="password" id="password" name="password" required /><br/><br/>
+
+    <label for="gender">Gender:</label><br/>
+    <input
+    type="radio"
+    id="female"
+    name="gender"
+    value="female"
+    required
+  />
+    <label for="female">Female</label>
+
+    <input 
+    type="radio"
+    id="male"
+    name="gender"
+    value="male"
+    required  />
+    <label for="male">Male</label>
+
+    <input
+    type="radio"
+    id="other"
+    name="gender"
+    value="other"
+    required />
+    <label for="other">Other</label>
+
+    <input
+    type="radio"
+    id="prefer-not-to-say"
+    name="gender"
+    value="prefer-not-to-say"
+    required />
+    <label for="prefer-not-to-say">Prefer not to say</label><br/><br/>
+  </fieldset>
+  <br />
+    <button type="submit">Sign Up</button>
     </form>
+  </fieldset>
   </section>  
 </body>
 </html>
